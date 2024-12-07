@@ -9,8 +9,8 @@ OBJ= $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME):	$(OBJ)
-		ar rcs $(NAME) $(OBJ)
-#ar rcs den sonra ilk gelen olusturulacak kutuphane ardından gelenlerde içine konulacak nesne dosyaları.
+		ar rcs $(NAME) $?
+#ar rcs den sonra ilk gelen olusturulacak kutuphane ardından gelenlerde içine konulacak nesne dosyaları.$? sadece değiştirilen dosyaları yeniden kütüphaneye eklenmesini sağlar.
 %.o : %.c
 		$(CC) -c $(CFLAGS) $< -o $@
 #<$ kullanıcıdan gelen ilk girdi $@ tüm parametreleri temsil eder

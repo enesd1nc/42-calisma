@@ -54,7 +54,9 @@ int	ft_printf(const char *format, ...)
 {
 	va_list	args;//argümanları tutacak değişken tanımladık(liste)
 	int		total_len;
-
+	
+	if (!format)
+		return (-1);
 	total_len = 0;
 	va_start(args, format);//ilk argümandan itibaren liste başlatılır.2. parametreye son sabit değişkeni yazıcaksın 
 	total_len = ft_format(&args, format);
