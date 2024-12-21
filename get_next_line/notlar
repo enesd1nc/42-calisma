@@ -1,0 +1,7 @@
+Bu fonksiyonun amacı her bir satırı tek tek okumakdır.
+İlk başta read buffer size kadar okur eğer new line yoksa içinde döngü devam eder eğer varsa döngüye bir daha girmez
+NOT! read newline gorunce durmaz buffer size kadar gider veya dosya sonu.
+Ardından diğer fonksiyona giderek new line a kadar olan kısım line değişkenine atanır sonuna new line ve null eklenerek değer döndürülür.
+Şimdi yapmamız gereken remainderı guncellemek ve okunan satırı silmek.
+Eğer remainderda new linedan sonra kalan elamanlar varsa yeni remaindera atılır ve sonuna null eklenir.
+Böyelece fonksiyon tekrardan çağrıldığında remainder kaldığı satırdan devam edicek.
