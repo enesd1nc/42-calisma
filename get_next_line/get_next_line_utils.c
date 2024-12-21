@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msengul < msengul@student.42kocaeli.com    +#+  +:+       +#+        */
+/*   By: mdinc <mdinc@student.42kocaeli.com.tr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/06 15:07:50 by msengul           #+#    #+#             */
-/*   Updated: 2024/12/09 12:17:01 by msengul          ###   ########.fr       */
+/*   Created: 2024/12/21 20:58:25 by mdinc             #+#    #+#             */
+/*   Updated: 2024/12/21 20:58:28 by mdinc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
