@@ -5,3 +5,4 @@ Ardından diğer fonksiyona giderek new line a kadar olan kısım line değişke
 Şimdi yapmamız gereken remainderı guncellemek ve okunan satırı silmek.
 Eğer remainderda new linedan sonra kalan elamanlar varsa yeni remaindera atılır ve sonuna null eklenir.
 Böyelece fonksiyon tekrardan çağrıldığında remainder kaldığı satırdan devam edicek.
+Başlangıçta rest işaretçişine hiç bir adres atanmadığı için fonksiyona NULL olarak gider.
