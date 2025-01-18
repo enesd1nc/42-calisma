@@ -1,0 +1,50 @@
+Host => Ev sahibi sistem. Hostname genelde bir sunucu veya cihazın adını temsil eder
+APT => paket yönetim sistemi.Paket kurulumu yapar.Yüklü olan paketleri günceller.Paket kaldırır
+Örnek:sudo apt install vim
+-sudo apt updte => depo listelerini günceller
+-sudo apt upgrade => sistemdeki tüm paktleri günceller
+-sudo apt remove vim
+apt-get ie apt farkı
+-get ayrıntılı kontrol ve geniş seçenekler sunar
+-apt daha sade ve modern bir kullanım sunar
+usermod -ag sudo kullanıcı_adı
+-usermod >= kullanıcı hesaplarını değiştirmek için kullanılır
+- -a => kullanıcıyı mevcut guruplarına dokunmadan yeni guruba ekler
+- -G => kullanıcının ait olacağı gurubu belirtir
+- sudo gurubu root yetkisi verir
+sudo visudo
+-sudoers dosyasını güvenli bir şekilde düzenlemek için kullanılır
+-suoders dosyası sistemdeki kullanıcıların hangi komutları çalıştırabileceği belirlediğimiz dosyaır.
+ALL=(ALL:ALL) ALL
+-1.ALL bu kulanıcı tüm maknelerde bu yetkiyi kullanabilir
+-2.(ALL:ALL) 1.komutların hangi kullanıcı kimliği ile çalıştırabileeğini belirtir 2.aynısının grup versiyonu
+-son ALL kullanıcının hangi komutları çalıştırabileceği.
+SSH
+-SSH (Secure Shell), ağ üzerindeki cihazlara güvenli bir şekilde erişim sağlamak için kullanılan bir protokoldür. 
+-SSH, şifrelenmiş bir iletişim kanalı oluşturur, böylece kullanıcılar, bir ağ üzerinden başka bir bilgisayara bağlanırken güvenli bir şekilde veri alışverişinde bulunabilir.
+-openssh-server diğer cihazların sunucuya uzaktan bağlanmasını sağlar
+sudo systemctl status ssh
+-sudo yönetici izinleriyle çalıştır
+-systemctl sistem hizmetlerini yönetmek için kullanılır
+-status belirtilen hizmetin mevcut durumu
+-sshd_config dosyası openssh yapılandırma dosyasıdır burdan port numarasını 4242 yapıcaz.
+-sudo vim /etc/ssh/sshd_config
+Port nedir?
+-bilgisayar ağlarında iletişim için kullanılan sanal adrestir.
+sudo grep Port /etc/ssh/sshd_config
+-grep bir dosyada belirtilen istenen kelimeyi bulur.Eşleşen satırları gösterir
+-Port aranacak kelime
+-sonuç olarak port yazan satırları yazdırır.
+sudo service ssh restart
+-ssh ı yeniden başlat
+UFW
+-bir güvenlik duvarıdır
+Güvenlik duvarı nedir ne işe yarar?
+-bilgisayar sistemlerini ve ağları yetkisiz erişimlerden korumak için tasarlanmış bir güvenlik aracıdır. Temel olarak, bir güvenlik duvarı, gelen ve giden ağ trafiğini izler ve belirli güvenlik kurallarına göre bu trafiğe izin verir veya engeller.Ağ güvenlğini korur
+-sudo ufw enable
+-sudo ufw allow ssh =>
+-sudo ufw allow 4242 => port 4242 yi açar ve bu port üzerinden gelen ağ trafiğine izin verir.
+-allow => trafiğe izin vermek
+-sudo ufw status numbered
+
+
