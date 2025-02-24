@@ -23,7 +23,7 @@ void	sort_int_tab(int *tab, unsigned int size)
 #include <stdio.h>
 int main()
 {
-	int	tab[] = {3,2,1};
+	int	tab[] = {2,3,1};
 	sort_int_tab(tab, 3);
 	int i = 0;
 	while (i < 3)
